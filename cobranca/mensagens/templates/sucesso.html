@@ -1,0 +1,9 @@
+<h1>Mensagens enviadas com sucesso!</h1>
+
+<h2>Contatos enviados:</h2>
+<ul>
+    {% for contato in contatos %}
+        <li>{{ contato }}</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'upload' %}">Enviar nova planilha</a>

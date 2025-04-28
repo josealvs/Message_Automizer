@@ -1,0 +1,6 @@
+<h1>Upload da Planilha de Contatos</h1>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Enviar Mensagens</button>
+</form>
